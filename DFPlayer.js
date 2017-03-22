@@ -37,7 +37,7 @@
         }
       });
     startQueue(board);
-    init();
+    self.init();
   }
 
   DFPlayer.prototype = proto = Object.create(Module.prototype, {
