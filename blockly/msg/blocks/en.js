@@ -1,10 +1,7 @@
-Blockly.Msg.WEBDUINO_DFPLAYER = 'MP3 ( DFPlayer )，Rx ';
-Blockly.Msg.WEBDUINO_DFPLAYER_TX = '  Tx';
-Blockly.Msg.WEBDUINO_DFPLAYER_PLAY = 'MP3 DFPlayer Play';
-Blockly.Msg.WEBDUINO_DFPLAYER_START = 'MP3 DFPlayer Start';
-Blockly.Msg.WEBDUINO_DFPLAYER_STOP = 'MP3 DFPlayer Stop';
-Blockly.Msg.WEBDUINO_DFPLAYER_PAUSE = 'MP3 DFPlayer Pause';
-Blockly.Msg.WEBDUINO_DFPLAYER_LOOP = 'MP3 DFPlayer Loop';
-Blockly.Msg.WEBDUINO_DFPLAYER_PREVIOUS = 'MP3 DFPlayer Previous';
-Blockly.Msg.WEBDUINO_DFPLAYER_NEXT = 'MP3 DFPlayer Next';
-Blockly.Msg.WEBDUINO_DFPLAYER_VOLUME = 'MP3 DFPlayer Volume (0~30)';
+// LCD1602
+Blockly.Msg.WEBDUINO_LCD1602 = "LCD (1602)，SDA ";
+Blockly.Msg.WEBDUINO_LCD1602_SCL = "  SCL";
+Blockly.Msg.WEBDUINO_LCD1602_PRINT = "LCD Print:";
+Blockly.Msg.WEBDUINO_LCD1602_CLEAR = "Clear LCD Screen";
+Blockly.Msg.WEBDUINO_LCD1602_LOCATE_X = "LCD Col:";
+Blockly.Msg.WEBDUINO_LCD1602_LOCATE_Y = "LCD Row:";

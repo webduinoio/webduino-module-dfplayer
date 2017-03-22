@@ -1,13 +1,13 @@
 {
-  "name": "webduino-module-dfplayer",
-  "description": "DFPlayer Module for Webduino",
+  "name": "webduino-module-lcd1602",
+  "description": "LCD1602 Module for Webduino",
   "main": "DFPlayer.js",
   "authors": "",
   "license": "ISC",
   "keywords": [
     "arduino",
     "webduino",
-    "dfplayer"
+    "lcd1602"
   ],
   "ignore": [
     "**/.*",

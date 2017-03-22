@@ -1,13 +1,13 @@
 {
-  "types": ["DFPlayer_new", "DFPlayer_play", "DFPlayer_loop", "DFPlayer_volume", "DFPlayer_previous", "DFPlayer_next", "DFPlayer_start", "DFPlayer_stop", "DFPlayer_pause"],
-  "category": "catMenu1",
+  "types": ["lcd1602_new", "lcd1602_print"],
+  "category": "catLCD1602",
   "scripts": [
     "blockly/blocks.js",
     "blockly/javascript.js"
   ],
   "dependencies": [
-    "DFPlayer.js",
-    "DFPlayer-blockly.js"
+    "LCD1602.js",
+    "LCD1602-blockly.js"
   ],
   "msg": "blockly/msg",
   "blocksMsg": "blockly/msg/blocks",

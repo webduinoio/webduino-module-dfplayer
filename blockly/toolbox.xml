@@ -1,37 +1,18 @@
-<category id="catDFPlayer">
+<category id="catLCD1602" tags="fly,smart">
   <block type="variables_set">
-    <field name="VAR">dfplayer</field>
+    <field name="VAR">lcd1602</field>
     <value name="VALUE">
-      <block type="DFPlayer_new">
-        <field name="Rx_">10</field>
-        <field name="Tx_">11</field>
+      <block type="lcd1602_new">
+        <field name="sda_">8</field>
+        <field name="scl_">9</field>
       </block>
     </value>
   </block>
-  <block type="DFPlayer_play">
+  <block type="lcd1602_print">
     <value name="value_">
-      <block type="math_number">
-        <field name="NUM">1</field>
+      <block type="text">
+        <field name="TEXT">Hello</field>
       </block>
     </value>
   </block>
-  <block type="DFPlayer_loop">
-    <value name="value_">
-      <block type="math_number">
-        <field name="NUM">1</field>
-      </block>
-    </value>
-  </block>
-  <block type="DFPlayer_volume">
-    <value name="value_">
-      <block type="math_number">
-        <field name="NUM">1</field>
-      </block>
-    </value>
-  </block>
-  <block type="DFPlayer_previous"></block>
-  <block type="DFPlayer_next"></block>
-  <block type="DFPlayer_start"></block>
-  <block type="DFPlayer_stop"></block>
-  <block type="DFPlayer_pause"></block>
 </category>
