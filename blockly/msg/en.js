@@ -1,1 +1,1 @@
-MSG.catLCD1602 = "LCD Display";
+MSG.catDFPlayer = 'MP3 Player';
