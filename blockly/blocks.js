@@ -77,67 +77,23 @@ Blockly.Blocks['DFPlayer_loop'] = {
   }
 }
 
-Blockly.Blocks['DFPlayer_previous'] = {
-  init: function () {
+Blockly.Blocks['DFPlayer_action'] = {
+  init: function() {
     this.appendDummyInput()
-      .appendField(new Blockly.FieldVariable("dfplayer"), "name_")
-      .appendField(Blockly.Msg.WEBDUINO_DFPLAYER_PREVIOUS, "MP3 DFPlayer 播放上一首:");
-    this.setPreviousStatement(true);
-    this.setNextStatement(true);
-    this.setTooltip('');
+        .appendField(new Blockly.FieldVariable("dfplayer"), "name_")
+        .appendField("MP3 DFPlayer")
+        .appendField(new Blockly.FieldDropdown([
+          [Blockly.Msg.WEBDUINO_DFPLAYER_PREVIOUS, "prev"],
+          [Blockly.Msg.WEBDUINO_DFPLAYER_NEXT, "next"],
+          [Blockly.Msg.WEBDUINO_DFPLAYER_START, "start"],
+          [Blockly.Msg.WEBDUINO_DFPLAYER_STOP, "stop"],
+          [Blockly.Msg.WEBDUINO_DFPLAYER_PAUSE, "pause"]
+        ]), "action_");
+    this.setInputsInline(false);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
     this.setColour(65);
-    this.setHelpUrl('https://webduino.io');
-  }
-};
-
-Blockly.Blocks['DFPlayer_next'] = {
-  init: function () {
-    this.appendDummyInput()
-      .appendField(new Blockly.FieldVariable("dfplayer"), "name_")
-      .appendField(Blockly.Msg.WEBDUINO_DFPLAYER_NEXT, "MP3 DFPlayer 播放下一首:");
-    this.setPreviousStatement(true);
-    this.setNextStatement(true);
     this.setTooltip('');
-    this.setColour(65);
-    this.setHelpUrl('https://webduino.io');
-  }
-};
-
-Blockly.Blocks['DFPlayer_start'] = {
-  init: function () {
-    this.appendDummyInput()
-      .appendField(new Blockly.FieldVariable("dfplayer"), "name_")
-      .appendField(Blockly.Msg.WEBDUINO_DFPLAYER_START, "MP3 DFPlayer 開始播放");
-    this.setPreviousStatement(true);
-    this.setNextStatement(true);
-    this.setTooltip('');
-    this.setColour(65);
-    this.setHelpUrl('https://webduino.io');
-  }
-};
-
-Blockly.Blocks['DFPlayer_stop'] = {
-  init: function () {
-    this.appendDummyInput()
-      .appendField(new Blockly.FieldVariable("dfplayer"), "name_")
-      .appendField(Blockly.Msg.WEBDUINO_DFPLAYER_STOP, "MP3 DFPlayer 停止播放");
-    this.setPreviousStatement(true);
-    this.setNextStatement(true);
-    this.setTooltip('');
-    this.setColour(65);
-    this.setHelpUrl('https://webduino.io');
-  }
-};
-
-Blockly.Blocks['DFPlayer_pause'] = {
-  init: function () {
-    this.appendDummyInput()
-      .appendField(new Blockly.FieldVariable("dfplayer"), "name_")
-      .appendField(Blockly.Msg.WEBDUINO_DFPLAYER_PAUSE, "MP3 DFPlayer 暫停播放");
-    this.setPreviousStatement(true);
-    this.setNextStatement(true);
-    this.setTooltip('');
-    this.setColour(65);
-    this.setHelpUrl('https://webduino.io');
+    this.setHelpUrl('');
   }
 };

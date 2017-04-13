@@ -26,32 +26,27 @@ Blockly.JavaScript['DFPlayer_volume'] = function (block) {
   return code;
 };
 
-Blockly.JavaScript['DFPlayer_previous'] = function (block) {
+Blockly.JavaScript['DFPlayer_action'] = function (block) {
   var variable_name_ = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('name_'), Blockly.Variables.NAME_TYPE);
-  var code = variable_name_ + '.previous();\n';
-  return code;
-};
+  var dropdown_state_ = block.getFieldValue('action_');
+  var code = '';
 
-Blockly.JavaScript['DFPlayer_next'] = function (block) {
-  var variable_name_ = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('name_'), Blockly.Variables.NAME_TYPE);
-  var code = variable_name_ + '.next();\n';
-  return code;
-};
-
-Blockly.JavaScript['DFPlayer_start'] = function (block) {
-  var variable_name_ = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('name_'), Blockly.Variables.NAME_TYPE);
-  var code = variable_name_ + '.start();\n';
-  return code;
-};
-
-Blockly.JavaScript['DFPlayer_stop'] = function (block) {
-  var variable_name_ = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('name_'), Blockly.Variables.NAME_TYPE);
-  var code = variable_name_ + '.stop();\n';
-  return code;
-};
-
-Blockly.JavaScript['DFPlayer_pause'] = function (block) {
-  var variable_name_ = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('name_'), Blockly.Variables.NAME_TYPE);
-  var code = variable_name_ + '.pause();\n';
+  switch(dropdown_state_) {
+    case 'prev':
+      code = variable_name_ + '.previous();\n';
+      break;
+    case 'next':
+      code = variable_name_ + '.next();\n';
+      break;
+    case 'start':
+      code = variable_name_ + '.start();\n';
+      break;
+    case 'stop':
+      code = variable_name_ + '.stop();\n';
+      break;
+    case 'pause':
+      code = variable_name_ + '.pause();\n';
+      break;
+  }
   return code;
 };

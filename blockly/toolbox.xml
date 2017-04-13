@@ -29,9 +29,5 @@
       </block>
     </value>
   </block>
-  <block type="DFPlayer_previous"></block>
-  <block type="DFPlayer_next"></block>
-  <block type="DFPlayer_start"></block>
-  <block type="DFPlayer_stop"></block>
-  <block type="DFPlayer_pause"></block>
+  <block type="DFPlayer_action"></block>
 </category>
