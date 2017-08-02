@@ -8,3 +8,5 @@ Blockly.Msg.WEBDUINO_DFPLAYER_LOOP = 'MP3 DFPlayer 重复播放';
 Blockly.Msg.WEBDUINO_DFPLAYER_PREVIOUS = '播放上一首';
 Blockly.Msg.WEBDUINO_DFPLAYER_NEXT = '播放下一首';
 Blockly.Msg.WEBDUINO_DFPLAYER_VOLUME = 'MP3 DFPlayer 音量 (0~30)';
+Blockly.Msg.WEBDUINO_DFPLAYER_SET = '设定';
+Blockly.Msg.WEBDUINO_DFPLAYER_NUM = '首';

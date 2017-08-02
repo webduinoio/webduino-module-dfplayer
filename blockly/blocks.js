@@ -42,7 +42,9 @@ Blockly.Blocks['DFPlayer_play'] = {
   init: function () {
     this.appendValueInput("value_")
       .appendField(new Blockly.FieldVariable("dfplayer"), "name_")
-      .appendField(Blockly.Msg.WEBDUINO_DFPLAYER_PLAY, "MP3 DFPlayer 播放曲目:");
+      .appendField(Blockly.Msg.WEBDUINO_DFPLAYER_PLAY, "播放第");
+    this.appendDummyInput()
+      .appendField(Blockly.Msg.WEBDUINO_DFPLAYER_NUM,"首");
     this.setPreviousStatement(true);
     this.setNextStatement(true);
     this.setTooltip('');
@@ -55,7 +57,7 @@ Blockly.Blocks['DFPlayer_volume'] = {
   init: function () {
     this.appendValueInput("value_")
       .appendField(new Blockly.FieldVariable("dfplayer"), "name_")
-      .appendField(Blockly.Msg.WEBDUINO_DFPLAYER_VOLUME, "MP3 DFPlayer 音量:");
+      .appendField(Blockly.Msg.WEBDUINO_DFPLAYER_VOLUME, "音量:");
     this.setPreviousStatement(true);
     this.setNextStatement(true);
     this.setTooltip('');
@@ -68,7 +70,9 @@ Blockly.Blocks['DFPlayer_loop'] = {
   init: function () {
     this.appendValueInput("value_")
       .appendField(new Blockly.FieldVariable("dfplayer"), "name_")
-      .appendField(Blockly.Msg.WEBDUINO_DFPLAYER_LOOP, "MP3 DFPlayer 重複播放曲目:");
+      .appendField(Blockly.Msg.WEBDUINO_DFPLAYER_LOOP, "重複播放第");
+    this.appendDummyInput()
+      .appendField(Blockly.Msg.WEBDUINO_DFPLAYER_NUM,"首");
     this.setPreviousStatement(true);
     this.setNextStatement(true);
     this.setTooltip('');
@@ -81,7 +85,7 @@ Blockly.Blocks['DFPlayer_action'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(new Blockly.FieldVariable("dfplayer"), "name_")
-        .appendField("MP3 DFPlayer")
+        .appendField(Blockly.Msg.WEBDUINO_DFPLAYER_SET, "設定")
         .appendField(new Blockly.FieldDropdown([
           [Blockly.Msg.WEBDUINO_DFPLAYER_PREVIOUS, "prev"],
           [Blockly.Msg.WEBDUINO_DFPLAYER_NEXT, "next"],
