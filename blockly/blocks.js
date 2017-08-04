@@ -1,3 +1,6 @@
+var mainUrl = 'https://tutorials.webduino.io/zh-tw/docs/';
+var utmUrl = '?utm_source=cloud-blockly&utm_medium=contextMenu&utm_campaign=tutorials';
+
 Blockly.Blocks['DFPlayer_new'] = {
   init: function () {
     this.appendDummyInput()
@@ -34,7 +37,7 @@ Blockly.Blocks['DFPlayer_new'] = {
     this.setOutput(true);
     this.setColour(230);
     this.setTooltip('');
-    this.setHelpUrl('https://webduino.io');
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
   }
 };
 
@@ -49,7 +52,7 @@ Blockly.Blocks['DFPlayer_play'] = {
     this.setNextStatement(true);
     this.setTooltip('');
     this.setColour(65);
-    this.setHelpUrl('https://webduino.io');
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
   }
 }
 
@@ -62,7 +65,7 @@ Blockly.Blocks['DFPlayer_volume'] = {
     this.setNextStatement(true);
     this.setTooltip('');
     this.setColour(65);
-    this.setHelpUrl('https://webduino.io');
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
   }
 };
 
@@ -77,7 +80,7 @@ Blockly.Blocks['DFPlayer_loop'] = {
     this.setNextStatement(true);
     this.setTooltip('');
     this.setColour(65);
-    this.setHelpUrl('https://webduino.io');
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
   }
 }
 
@@ -98,6 +101,6 @@ Blockly.Blocks['DFPlayer_action'] = {
     this.setNextStatement(true, null);
     this.setColour(65);
     this.setTooltip('');
-    this.setHelpUrl('');
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
   }
 };
