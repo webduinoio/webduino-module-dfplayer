@@ -26,6 +26,8 @@
     this._rx = RX;
     this._tx = TX;
     self = this;
+    board.on(webduino.BoardEvent.BEFOREDISCONNECT, this.stop.bind(this));
+    board.on(webduino.BoardEvent.ERROR, this.stop.bind(this));
     board.on(webduino.BoardEvent.SYSEX_MESSAGE,
       function (event) {
         var m = event.message;
