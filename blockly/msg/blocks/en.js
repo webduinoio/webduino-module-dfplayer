@@ -1,5 +1,5 @@
-Blockly.Msg.WEBDUINO_DFPLAYER = 'MP3 ( DFPlayer ), Rx ';
-Blockly.Msg.WEBDUINO_DFPLAYER_TX = '  Tx';
+Blockly.Msg.WEBDUINO_DFPLAYER = 'MP3 (DFPlayer), Tx ';
+Blockly.Msg.WEBDUINO_DFPLAYER_RX = '  Rx';
 Blockly.Msg.WEBDUINO_DFPLAYER_PLAY = 'Play #';
 Blockly.Msg.WEBDUINO_DFPLAYER_START = 'Start';
 Blockly.Msg.WEBDUINO_DFPLAYER_STOP = 'Stop';
