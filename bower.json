@@ -3,7 +3,7 @@
   "description": "DFPlayer Module for Webduino",
   "main": "DFPlayer.js",
   "authors": "",
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [
     "arduino",
     "webduino",
