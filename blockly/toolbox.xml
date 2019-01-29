@@ -1,4 +1,4 @@
-<category id="catDFPlayer" index="11">
+<category id="catDFPlayer" tags="fly,mark1,smart" index="11">
   <block type="variables_set">
     <field name="VAR">dfplayer</field>
     <value name="VALUE">
